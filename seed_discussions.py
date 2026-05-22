@@ -10,7 +10,7 @@ def run_gh_cmd(args):
     """Helper to run gh CLI commands and return output/errors."""
     cmd = ["gh"] + args
     print(f"Running: {' '.join(cmd)}")
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = subprocess.run(cmd, capture_output=True, text=True, encoding='utf-8')
     if result.returncode != 0:
         print(f"Error executing command: {' '.join(cmd)}")
         print(f"Stdout: {result.stdout}")
@@ -45,14 +45,8 @@ def get_repo_and_category_ids():
     }
     """
     
-    # We pass variables using -F or -f in gh api
-    # For gh api graphql, we can pass variables as JSON input.
-    variables = {
-        "owner": REPO_OWNER,
-        "name": REPO_NAME
-    }
-    
-    output = run_gh_cmd(["api", "graphql", "-f", f"query={query}", "-F", f"variables={json.dumps(variables)}"])
+    # We pass variables using -F in gh api graphql
+    output = run_gh_cmd(["api", "graphql", "-f", f"query={query}", "-F", f"owner={REPO_OWNER}", "-F", f"name={REPO_NAME}"])
     if not output:
         return None, None
     
@@ -81,14 +75,8 @@ def create_discussion(repo_id, category_id, title, body):
       }
     }
     """
-    variables = {
-        "repoId": repo_id,
-        "catId": category_id,
-        "title": title,
-        "body": body
-    }
     
-    output = run_gh_cmd(["api", "graphql", "-f", f"query={mutation}", "-F", f"variables={json.dumps(variables)}"])
+    output = run_gh_cmd(["api", "graphql", "-f", f"query={mutation}", "-F", f"repoId={repo_id}", "-F", f"catId={category_id}", "-F", f"title={title}", "-F", f"body={body}"])
     if not output:
         print(f"Failed to create discussion: {title}")
         return None
@@ -104,6 +92,8 @@ def create_discussion(repo_id, category_id, title, body):
         return None
 
 def main():
+    # Force stdout to use utf-8 to print emojis correctly on Windows
+    sys.stdout.reconfigure(encoding='utf-8')
     print("=== GitHub Discussion Seeder ===")
     
     # 1. Enable discussions
