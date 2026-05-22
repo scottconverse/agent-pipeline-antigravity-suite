@@ -1,0 +1,39 @@
+{
+   "metadata" : {
+      "description" : "Run multi-step Antigravity work without drift. v2.0 adds eleven Antigravity lifecycle hooks, directive-contract pre-approval, persistent file-backed run memory, an MCP Mem0 cross-session layer, intake skill, scope-lock authority, DoD readiness, and a centralized stop validator. Codex stays lighter; antigravity takes the heavier hand.",
+      "homepage" : "https://scottconverse.github.io/agent-pipeline-antigravity/",
+      "repository" : "https://github.com/scottconverse/agent-pipeline-antigravity",
+      "version" : "2.2.2"
+   },
+   "name" : "agent-pipeline-antigravity",
+   "owner" : {
+      "email" : "sconverse@gmail.com",
+      "name" : "Scott Converse"
+   },
+   "plugins" : [
+      {
+         "author" : {
+            "email" : "sconverse@gmail.com",
+            "name" : "Scott Converse"
+         },
+         "description" : "/agent-pipeline-antigravity:run orchestrates multi-step Antigravity work end-to-end. v2.0 enforcement: eleven Antigravity lifecycle hooks (SessionStart/UserPromptSubmit/PreToolUse/PermissionRequest/PostToolUse/PostToolUseFailure/PreCompact/PostCompact/SubagentStop/Stop/SessionEnd) deny destructive commands, block out-of-scope writes during active runs, and refuse invalid pipeline stops. Persistent file-backed memory at .agent-runs/<run-id>/memory/ survives context compaction. Optional directive-contract pre-approval (SHA-256-bound) auto-fires conformant manifest/plan gates. /agent-pipeline-antigravity:mem0 manages the MCP cross-session Mem0 layer; OSS-default, Platform behind consent.",
+         "homepage" : "https://scottconverse.github.io/agent-pipeline-antigravity/",
+         "keywords" : [
+            "agent",
+            "pipeline",
+            "orchestration",
+            "multi-stage",
+            "human-in-the-loop",
+            "antigravity",
+            "hooks",
+            "memory",
+            "mem0",
+            "directive"
+         ],
+         "license" : "Apache-2.0",
+         "name" : "agent-pipeline-antigravity",
+         "source" : "./",
+         "version" : "2.2.2"
+      }
+   ]
+}

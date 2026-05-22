@@ -1,0 +1,18 @@
+{
+  "name": "agent-pipeline-antigravity",
+  "version": "2.2.2",
+  "description": "Run multi-step Antigravity work without drift. Port of agent-pipeline-antigravity v2.2.2 with human-in-the-loop gates, auto-promote checks, and safety constraints.",
+  "author": {
+     "email": "sconverse@gmail.com",
+     "name": "Scott Converse"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+     "agent",
+     "pipeline",
+     "orchestration",
+     "multi-stage",
+     "human-in-the-loop",
+     "antigravity"
+  ]
+}

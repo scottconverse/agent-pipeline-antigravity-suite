@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.coverage
+.tox/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Pipeline runs (template projects use this; here it'd be empty anyway)
+.agent-runs/
+
+# Mem0 layer configuration (operator-project-scoped; never commit)
+.mem0/
+
+# Plugin install metadata (some Antigravity surfaces write a .Antigravity/ dir
+# alongside the repo; never commit it).
+.Antigravity/
+
+# Temporary scripts used during v1.3.0 cleanroom testing
+_cleanroom_test.sh
+_setup_runner.sh
+_demo*.sh

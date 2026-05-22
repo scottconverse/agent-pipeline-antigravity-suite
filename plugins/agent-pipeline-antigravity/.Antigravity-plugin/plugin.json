@@ -1,0 +1,20 @@
+{
+   "author" : {
+      "email" : "sconverse@gmail.com",
+      "name" : "Scott Converse"
+   },
+   "description" : "Run multi-step Antigravity work without drift. v2.0 adds hooks-based enforcement (11 Antigravity lifecycle events), directive-contract pre-approval, scope-lock authority, intake skill, persistent run memory, and an MCP Mem0 layer for cross-session continuity. Three modal gates plus hook-layer enforcement: SessionStart/UserPromptSubmit/PreToolUse/PermissionRequest/PostToolUse/PostToolUseFailure/PreCompact/PostCompact/SubagentStop/Stop/SessionEnd. Codex stays lighter; Antigravity takes the heavier hand.",
+   "homepage" : "https://github.com/scottconverse/agent-pipeline-antigravity",
+   "keywords" : [
+      "agent",
+      "pipeline",
+      "orchestration",
+      "multi-stage",
+      "human-in-the-loop",
+      "antigravity"
+   ],
+   "license" : "Apache-2.0",
+   "name" : "agent-pipeline-antigravity",
+   "repository" : "https://github.com/scottconverse/agent-pipeline-antigravity.git",
+   "version" : "2.2.2"
+}

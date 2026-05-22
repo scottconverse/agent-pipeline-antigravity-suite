@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A premium suite of native plugins for the Antigravity agent. Features multi-stage orchestration, lifecycle hooks, and automated codebase auditing.">
+  <title>Antigravity Agent Pipeline Suite — Premium Agentic Orchestration & Auditing</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for modern aesthetic -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar" id="site-header">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="link-logo">
+        <span class="logo-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+        <span class="logo-text">Antigravity <span class="text-gradient">Suite</span></span>
+      </a>
+      <nav class="nav-menu" id="nav-links">
+        <a href="#features" class="nav-link" id="link-features">Features</a>
+        <a href="#architecture" class="nav-link" id="link-architecture">Architecture</a>
+        <a href="#installation" class="nav-link" id="link-install">Installation</a>
+        <a href="https://github.com/scottconverse/agent-pipeline-antigravity-suite" class="nav-btn" id="link-github" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="badge" id="hero-badge">Native Plugins for Antigravity</span>
+        <h1 class="hero-title" id="main-title">
+          Elevate Your AI Developer with <span class="text-gradient">Supercharged Orchestration</span>
+        </h1>
+        <p class="hero-subtitle" id="hero-desc">
+          Unleash the full potential of your Antigravity agent. Enforce compliance with 11 lifecycle hooks, protect state with persistent memory, and run multi-agent software engineering pipelines automatically.
+        </p>
+        <div class="hero-actions">
+          <a href="#installation" class="btn btn-primary" id="btn-get-started">
+            <i class="fa-solid fa-download"></i> Get Started
+          </a>
+          <a href="https://github.com/scottconverse/agent-pipeline-antigravity-suite/blob/main/USER-MANUAL.md" class="btn btn-secondary" id="btn-user-manual" target="_blank" rel="noopener">
+            <i class="fa-solid fa-book"></i> User Manual
+          </a>
+        </div>
+      </div>
+      
+      <!-- Interactive Preview/Illustration Component -->
+      <div class="hero-preview" id="interactive-preview">
+        <div class="preview-card glass">
+          <div class="card-header">
+            <div class="dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="tab-title">antigravity-session.log</div>
+          </div>
+          <div class="card-body console-code">
+            <div class="line"><span class="c-blue">❯</span> /agent-pipeline-antigravity:run start</div>
+            <div class="line c-gray">[14:02:11] [SessionStart] Initiating run session: run-482a...</div>
+            <div class="line c-gray">[14:02:12] [SessionStart] Local Mem0 continuity server check... OK</div>
+            <div class="line c-green">✔ Phase 1: Research completed in 4.2s</div>
+            <div class="line c-yellow">ℹ Phase 2: Generating implementation_plan.md...</div>
+            <div class="line c-purple">⚡ [PreCompact] Serializing runtime context...</div>
+            <div class="line c-green">✔ Context saved to .agent-runs/run-482a/memory/</div>
+            <div class="line c-cyan">⚠ Waiting for approval: Response required (APPROVE / REPLAN / CANCEL)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">The Suite Components</h2>
+        <p class="section-subtitle">Two specialized, robust plugins working in harmony to secure and guide agentic executions.</p>
+      </div>
+
+      <!-- Feature Toggles / Tabs -->
+      <div class="tabs-container">
+        <div class="tabs-list" role="tablist">
+          <button class="tab-btn active" id="tab-orchestrator" role="tab" aria-selected="true" aria-controls="panel-orchestrator">
+            <i class="fa-solid fa-diagram-project"></i> Orchestration & Hooks
+          </button>
+          <button class="tab-btn" id="tab-auditor" role="tab" aria-selected="false" aria-controls="panel-auditor">
+            <i class="fa-solid fa-shield-halved"></i> QA & Automated Auditing
+          </button>
+        </div>
+
+        <!-- Orchestration Panel -->
+        <div class="tab-panel active" id="panel-orchestrator" role="tabpanel" aria-labelledby="tab-orchestrator">
+          <div class="panel-grid">
+            <div class="panel-info">
+              <span class="panel-badge">agent-pipeline-antigravity</span>
+              <h3>Structured Multi-Agent Runs & Controls</h3>
+              <p>A rigorous orchestration engine that executes complex developer tasks across dedicated stages: Research, Plan, Execute, Verify, and Critique. It coordinates the lifecycle seamlessly without losing context.</p>
+              
+              <ul class="feature-checklist">
+                <li>
+                  <span class="check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                  <div>
+                    <strong>11 Lifecycle Hooks:</strong> Intercept and validate agent operations (e.g. <code>PreToolUse</code>, <code>SessionStart</code>) to prevent scope drift.
+                  </div>
+                </li>
+                <li>
+                  <span class="check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                  <div>
+                    <strong>Directive-Contract Cryptography:</strong> Signs task requirements with SHA-256 hashes to automatically verify sub-steps.
+                  </div>
+                </li>
+                <li>
+                  <span class="check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                  <div>
+                    <strong>Compaction-Resistant Memory:</strong> Saves state to local cache before LLM compactions, and restores it instantly post-compaction.
+                  </div>
+                </li>
+                <li>
+                  <span class="check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                  <div>
+                    <strong>Mem0 Docker Continuity:</strong> Integrate with Mem0 cross-session memory platforms to remember details across restarts.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-graphic">
+              <div class="feature-card glass">
+                <div class="feature-card-icon"><i class="fa-solid fa-shield-heart text-gradient"></i></div>
+                <h4>Zero Context Loss</h4>
+                <p>LLM context compactions wipe out short-term variables. Our hook engine writes state cache to disk and restores it dynamically upon session reload, allowing workflows to run indefinitely without forgetting goals.</p>
+              </div>
+              <div class="feature-card glass">
+                <div class="feature-card-icon"><i class="fa-solid fa-lock text-gradient"></i></div>
+                <h4>Drift & Edit Boundaries</h4>
+                <p>Ensure the agent never edits files outside the approved directory or runs dangerous terminal commands. The <code>PreToolUse</code> hook screens and restricts all model tool activities dynamically.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Auditing Panel -->
+        <div class="tab-panel" id="panel-auditor" role="tabpanel" aria-labelledby="tab-auditor">
+          <div class="panel-grid">
+            <div class="panel-info">
+              <span class="panel-badge">audit-skills-antigravity</span>
+              <h3>Consensus-Based Review & Verification</h3>
+              <p>Elevate code quality using automated, role-based audits. Rather than relying on simple heuristics, these tools generate evidence-based audits complete with file locations, line references, and severe rollup logs.</p>
+              
+              <ul class="feature-checklist">
+                <li>
+                  <span class="check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                  <div>
+                    <strong>Audit Lite:</strong> Quick, single-pass spot checks for small patches, bug fixes, or minor features, validating tests, docs, and code.
+                  </div>
+                </li>
+                <li>
+                  <span class="check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                  <div>
+                    <strong>Audit Team:</strong> Simulates a 5-role expert panel (Security Expert, Lead UX, Staff Engineer, Technical Writer, Test Lead) to examine your changes.
+                  </div>
+                </li>
+                <li>
+                  <span class="check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                  <div>
+                    <strong>Evidence-Based Validation:</strong> Every defect requires precise citations (files, line ranges, outputs) ensuring zero hallucinations.
+                  </div>
+                </li>
+                <li>
+                  <span class="check-icon"><i class="fa-solid fa-circle-check"></i></span>
+                  <div>
+                    <strong>Definition of Done (DoD) Checks:</strong> Standardized rollups into Blocker, Critical, Major, Minor, and Nit severities.
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-graphic">
+              <div class="feature-card glass">
+                <div class="feature-card-icon"><i class="fa-solid fa-people-group text-gradient"></i></div>
+                <h4>5-Lens Simulation</h4>
+                <p>Simulate specialized tech experts debating your PR. The Security Expert flags unsafe API usage while the Lead UX inspects accessibility, providing a holistic feedback loop before merging.</p>
+              </div>
+              <div class="feature-card glass">
+                <div class="feature-card-icon"><i class="fa-solid fa-file-invoice text-gradient"></i></div>
+                <h4>Actionable Reports</h4>
+                <p>Generates rich, clean markdown audit reports directly in your workspace folder. Use reports as verification evidence for CI/CD gates or PR approvals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture Section -->
+  <section class="architecture-section" id="architecture">
+    <div class="glow-orb glow-orb-3"></div>
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Suite Architecture</h2>
+        <p class="section-subtitle">How the plugins interact with the Antigravity Shell and your local workspace files.</p>
+      </div>
+
+      <div class="arch-container">
+        <!-- SVG diagram replacing basic placeholders -->
+        <div class="arch-visual-wrapper glass">
+          <svg class="arch-svg" viewBox="0 0 800 400" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#a855f7" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.8"/>
+              </linearGradient>
+              <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+                <stop offset="50%" stop-color="#a855f7" stop-opacity="0.8"/>
+                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Grid Background Pattern -->
+            <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1"/>
+            </pattern>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+
+            <!-- Core Nodes -->
+            <!-- Host Shell -->
+            <rect x="50" y="160" width="150" height="80" rx="10" fill="rgba(15, 23, 42, 0.6)" stroke="#3b82f6" stroke-width="2" class="svg-node" />
+            <text x="125" y="200" fill="#fff" font-family="'Outfit', sans-serif" font-size="14" font-weight="600" text-anchor="middle">Antigravity Shell</text>
+            <text x="125" y="220" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">(Electron/Node Host)</text>
+
+            <!-- Hook Engine -->
+            <rect x="280" y="160" width="180" height="80" rx="10" fill="rgba(15, 23, 42, 0.6)" stroke="#a855f7" stroke-width="2" class="svg-node" />
+            <text x="370" y="195" fill="#fff" font-family="'Outfit', sans-serif" font-size="14" font-weight="600" text-anchor="middle">Lifecycle Hook Engine</text>
+            <text x="370" y="215" fill="#e2e8f0" font-family="'Fira Code', sans-serif" font-size="10" text-anchor="middle">11 Core Interceptors</text>
+
+            <!-- Plugin 1: Orchestration -->
+            <rect x="560" y="60" width="190" height="100" rx="10" fill="rgba(15, 23, 42, 0.6)" stroke="#10b981" stroke-width="2" class="svg-node" />
+            <text x="655" y="95" fill="#fff" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" text-anchor="middle">agent-pipeline-antigravity</text>
+            <text x="655" y="115" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">✔ Directive-Contract SHA</text>
+            <text x="655" y="132" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">✔ Context Cache (.agent-runs)</text>
+
+            <!-- Plugin 2: Auditing -->
+            <rect x="560" y="240" width="190" height="100" rx="10" fill="rgba(15, 23, 42, 0.6)" stroke="#f59e0b" stroke-width="2" class="svg-node" />
+            <text x="655" y="275" fill="#fff" font-family="'Outfit', sans-serif" font-size="13" font-weight="600" text-anchor="middle">audit-skills-antigravity</text>
+            <text x="655" y="295" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">✔ /audit-lite (Spot check)</text>
+            <text x="655" y="312" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle">✔ /audit-team (Consensus)</text>
+
+            <!-- Connections -->
+            <!-- Arrow Host to Hooks -->
+            <path d="M 200 200 L 270 200" fill="none" stroke="url(#glowGrad)" stroke-width="2" marker-end="url(#arrow)" />
+            
+            <!-- Arrow Hooks to Plugin 1 -->
+            <path d="M 460 180 L 510 180 L 510 110 L 550 110" fill="none" stroke="#10b981" stroke-width="2" />
+            
+            <!-- Arrow Hooks to Plugin 2 -->
+            <path d="M 460 220 L 510 220 L 510 290 L 550 290" fill="none" stroke="#f59e0b" stroke-width="2" />
+
+            <!-- Markers -->
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 1 L 10 5 L 0 9 z" fill="#a855f7" />
+              </marker>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="lifecycle-timeline">
+          <h4>Execution Hook Sequence</h4>
+          <div class="timeline-steps">
+            <div class="timeline-step">
+              <span class="step-num">1</span>
+              <div>
+                <strong>SessionStart</strong>
+                <p>Loads active run variables and starts Mem0 docker container.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span class="step-num">2</span>
+              <div>
+                <strong>PreToolUse & PermissionRequest</strong>
+                <p>Intercepts file edits and runs scope checks against <code>scope-lock.yaml</code>.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span class="step-num">3</span>
+              <div>
+                <strong>PreCompact / PostCompact</strong>
+                <p>Locks state variables to disk and feeds them back into context to survive token resets.</p>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <span class="step-num">4</span>
+              <div>
+                <strong>SessionEnd</strong>
+                <p>Updates Mem0 database memory tables and clears run-locks safely.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Installation & Usage Section -->
+  <section class="installation-section" id="installation">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Setup & Deployment</h2>
+        <p class="section-subtitle">Quickly copy the plugins into your global configuration folder and verify them.</p>
+      </div>
+
+      <div class="setup-grid">
+        <div class="setup-steps">
+          <h3>Quick Start</h3>
+          
+          <div class="setup-step-item">
+            <div class="step-badge">1</div>
+            <div>
+              <h4>Clone the Monorepo</h4>
+              <p>Download the latest release and plugin directory structure.</p>
+            </div>
+          </div>
+
+          <div class="setup-step-item">
+            <div class="step-badge">2</div>
+            <div>
+              <h4>Copy plugins to configuration</h4>
+              <p>Move the files into your system's global Antigravity installation folder.</p>
+            </div>
+          </div>
+
+          <div class="setup-step-item">
+            <div class="step-badge">3</div>
+            <div>
+              <h4>Validate Installation</h4>
+              <p>Run standard unit tests with pytest to confirm environment health.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="setup-code glass">
+          <div class="code-tabs">
+            <button class="code-tab active" id="code-btn-windows">Windows (PowerShell)</button>
+            <button class="code-tab" id="code-btn-unix">macOS / Linux</button>
+          </div>
+          
+          <!-- Windows Code Panel -->
+          <div class="code-panel active" id="code-panel-windows">
+            <div class="code-header">
+              <span>PowerShell</span>
+              <button class="copy-btn" id="copy-btn-win" aria-label="Copy code block">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+            <pre><code class="language-powershell"># Clone the repo
+git clone https://github.com/scottconverse/agent-pipeline-antigravity-suite.git
+cd agent-pipeline-antigravity-suite
+
+# Copy plugins to global user directory
+Copy-Item -Path "plugins/*" -Destination "$HOME/.gemini/config/plugins" -Recurse -Force
+
+# Run test suite verification
+cd plugins/agent-pipeline-antigravity
+python -m pytest -m "not cleanroom_e2e"</code></pre>
+          </div>
+
+          <!-- Unix Code Panel -->
+          <div class="code-panel" id="code-panel-unix">
+            <div class="code-header">
+              <span>Bash</span>
+              <button class="copy-btn" id="copy-btn-unix" aria-label="Copy code block">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+            <pre><code class="language-bash"># Clone the repo
+git clone https://github.com/scottconverse/agent-pipeline-antigravity-suite.git
+cd agent-pipeline-antigravity-suite
+
+# Copy plugins to global user directory
+cp -R plugins/* ~/.gemini/config/plugins/
+
+# Run test suite verification
+cd plugins/agent-pipeline-antigravity
+python -m pytest -m "not cleanroom_e2e"</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer" id="site-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <p class="footer-logo"><i class="fa-solid fa-wand-magic-sparkles text-gradient"></i> Antigravity Suite</p>
+        <p class="footer-tagline">Bulletproof workflow automation, safety guards, and reviews for modern agentic AI development.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/scottconverse/agent-pipeline-antigravity-suite" target="_blank" rel="noopener">Monorepo GitHub</a>
+        <a href="https://github.com/scottconverse/agent-pipeline-antigravity-suite/blob/main/USER-MANUAL.md" target="_blank" rel="noopener">User Manual</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Scott Converse. All rights reserved. Licensed under Apache-2.0.</p>
+    </div>
+  </footer>
+
+  <!-- Interactivity Script -->
+  <script>
+    // Tab switching for plugins
+    const tabOrchestrator = document.getElementById('tab-orchestrator');
+    const tabAuditor = document.getElementById('tab-auditor');
+    const panelOrchestrator = document.getElementById('panel-orchestrator');
+    const panelAuditor = document.getElementById('panel-auditor');
+
+    tabOrchestrator.addEventListener('click', () => {
+      tabOrchestrator.classList.add('active');
+      tabOrchestrator.setAttribute('aria-selected', 'true');
+      tabAuditor.classList.remove('active');
+      tabAuditor.setAttribute('aria-selected', 'false');
+      panelOrchestrator.classList.add('active');
+      panelAuditor.classList.remove('active');
+    });
+
+    tabAuditor.addEventListener('click', () => {
+      tabAuditor.classList.add('active');
+      tabAuditor.setAttribute('aria-selected', 'true');
+      tabOrchestrator.classList.remove('active');
+      tabOrchestrator.setAttribute('aria-selected', 'false');
+      panelAuditor.classList.add('active');
+      panelOrchestrator.classList.remove('active');
+    });
+
+    // Tab switching for code installation panels
+    const codeBtnWindows = document.getElementById('code-btn-windows');
+    const codeBtnUnix = document.getElementById('code-btn-unix');
+    const codePanelWindows = document.getElementById('code-panel-windows');
+    const codePanelUnix = document.getElementById('code-panel-unix');
+
+    codeBtnWindows.addEventListener('click', () => {
+      codeBtnWindows.classList.add('active');
+      codeBtnUnix.classList.remove('active');
+      codePanelWindows.classList.add('active');
+      codePanelUnix.classList.remove('active');
+    });
+
+    codeBtnUnix.addEventListener('click', () => {
+      codeBtnUnix.classList.add('active');
+      codeBtnWindows.classList.remove('active');
+      codePanelUnix.classList.add('active');
+      codePanelWindows.classList.remove('active');
+    });
+
+    // Clipboard Copy implementation
+    function setupCopyButton(btnId, panelId) {
+      const button = document.getElementById(btnId);
+      const panel = document.getElementById(panelId);
+      
+      button.addEventListener('click', () => {
+        const codeText = panel.querySelector('pre code').innerText;
+        navigator.clipboard.writeText(codeText).then(() => {
+          const originalHTML = button.innerHTML;
+          button.innerHTML = '<i class="fa-solid fa-check c-green"></i> Copied!';
+          setTimeout(() => {
+            button.innerHTML = originalHTML;
+          }, 2000);
+        }).catch(err => {
+          console.error('Failed to copy to clipboard', err);
+        });
+      });
+    }
+
+    setupCopyButton('copy-btn-win', 'code-panel-windows');
+    setupCopyButton('copy-btn-unix', 'code-panel-unix');
+  </script>
+</body>
+</html>
