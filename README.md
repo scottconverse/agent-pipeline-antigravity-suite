@@ -2,6 +2,12 @@
 
 A premium suite of native plugins for the **Antigravity** agent, bringing bulletproof multi-stage orchestration, human-in-the-loop validation, memory persistence, and deep automated auditing to your software development workflows.
 
+### 🔗 Quick Links
+* **[Live Landing Page](https://scottconverse.github.io/agent-pipeline-antigravity-suite/)**
+* **[Interactive User Manual](https://github.com/scottconverse/agent-pipeline-antigravity-suite/blob/main/USER-MANUAL.md)**
+
+---
+
 This monorepo consolidates two distinct, powerful plugins:
 
 1. **`agent-pipeline-antigravity`**: A multi-stage orchestration engine featuring 11 lifecycle hooks, persistence-layer memory, directive-contract gates, and Mem0 integration for cross-session continuity.
